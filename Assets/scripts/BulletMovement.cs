@@ -13,5 +13,5 @@ public class BulletMovementScript : MonoBehaviour
     {
         transform.Translate(Vector3.forward * speed * Time.deltaTime);
     }
-    IEnumerator DeSpawn() { yield return new WaitForSeconds(10f); Destroy(gameObject); }
+    IEnumerator DeSpawn() { yield return new WaitForSeconds(5f); Destroy(gameObject); }
 }
