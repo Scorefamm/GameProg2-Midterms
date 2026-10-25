@@ -2,12 +2,10 @@ using UnityEngine;
 
 public class EnemyDetector : MonoBehaviour
 {
-    [Header("Targeting")]
     public string targetTag = "Enemy";    // Tag of objects to detect
     private float detectionRadius = 10f;   // How far we can see targets
 
-    [Header("Rotation")]
-    public float rotationSpeed = 5f;      // How fast the shooter rotates
+    public float rotationSpeed = 5f;      // How fast the player rotates
 
     [HideInInspector]
     public Transform nearestTarget;       // The closest target in range
